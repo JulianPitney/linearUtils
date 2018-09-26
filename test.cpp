@@ -6,11 +6,19 @@ using namespace std;
 int main(int argc, char* argv[]) {
 
 
-	for(unsigned int i = 0; i < 10000000; i++)
-	{
+	int x = 2000000;
+	int y = 2000000;
+	linUtils::Mat<int> *mat = new linUtils::Mat<int>(x,y);
 
-		LINUtils::Vector_2D *vec = LINUtils::CreateVector2D(4, 2.0);
+	for(int i = 0; i < x; i++)
+	{
+		for(int c = 0; c < y; c++)
+		{
+			cout << mat->mat[i][c];
+		}
+		cout << endl;
 	}
+
 
 	return 0;
 }
