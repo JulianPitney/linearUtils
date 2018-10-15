@@ -6,18 +6,10 @@ using namespace std;
 int main(int argc, char* argv[]) {
 
 
-	int x = 2000000;
-	int y = 2000000;
-	linUtils::Mat<int> *mat = new linUtils::Mat<int>(x,y);
+	int x = 6;
+	int y = 6;
+	linUtils::Mat<int> *mat = new linUtils::Mat<int>(x,y, 1);
 
-	for(int i = 0; i < x; i++)
-	{
-		for(int c = 0; c < y; c++)
-		{
-			cout << mat->mat[i][c];
-		}
-		cout << endl;
-	}
 
 
 	return 0;
